@@ -1,0 +1,26 @@
+{
+  "name": "social-network-follow",
+  "version": "0.0.1",
+  "description": "Share Web Pages",
+  "main": "distrib/js/social-network-follow.min.js",
+  "scripts": {
+    "test": "exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sylvain59650/social-network-follow.git"
+  },
+  "keywords": ["social","network","follow","front-end"],
+  "author": "sylvain59",
+  "maintainers": [
+    {
+      "name": "sylvain59",
+      "email": "slongepee@laposte.net"
+    }
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Sylvain59650/social-network-follow/issues"
+  },
+  "homepage": "https://github.com/Sylvain59650/social-network-follow#readme"
+}
