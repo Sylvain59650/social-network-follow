@@ -1,0 +1,37 @@
+@import "socials-colors";
+$text-color: #444 !default;
+$text-size: .8em !default;
+$transition: color 200ms ease-in-out !default;
+@for $i from 0 to length($share-names) {
+  $shareName: nth($share-names, $i + 1);
+  $color: nth($share-colors, $i + 1);
+  .social-link.#{$shareName} {
+    color: $color;
+    .social-label {
+      color: $color;
+    }
+    &:hover,
+    &:focus,
+    &:active {
+      color: darken($color, 10%);
+      .social-label {
+        color: darken($color, 10%);
+      }
+    }
+  }
+}
+
+.social-link {
+  transition: $transition;
+  &.social-link-count {
+    .social-count {
+      font-size: .5em;
+    }
+  }
+}
+
+.social-label {
+  font-size: $text-size;
+  color: $text-color;
+  transition: $transition;
+}

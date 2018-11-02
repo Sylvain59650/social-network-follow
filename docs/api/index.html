@@ -1,0 +1,152 @@
+<html>
+
+<head>
+  <title>social-network-follow</title>
+  <link href="https://sylvain59650.github.io/demonstrator/css/theme1.css" type="text/css" rel="stylesheet" />
+</head>
+
+<body>
+  <style>
+    .arg>p>i:before {
+      clear: both;
+    }
+  </style>
+  <div class="container">
+    <div>
+      <a href="https://www.npmjs.com/package/social-network-follow" title="NPM">
+        <img src="https://sylvain59650.github.io/demonstrator/img/npm.png" height="32"></a>
+      <a href="https://github.com/Sylvain59650/social-network-follow" title="GitHub"><img src="https://github.com/favicon.ico" height="32" /></a>
+    </div>
+
+    <h1>social-network-follow</h1>
+
+    <div style="display:inline">
+      <a target="_blank" title="build" href="https://travis-ci.org/Sylvain59650/social-network-follow"><img src="https://travis-ci.org/Sylvain59650/social-network-follow.png?branch=master" /></a>
+      <a target="_blank" title="version" href="https://www.npmjs.com/package/social-network-follow"><img src="https://img.shields.io/npm/v/social-network-follow.svg" /></a>
+      <a target="_blank" title="package" href="https://github.com/Sylvain59650/social-network-follow"><img src="https://img.shields.io/github/package-json/v/Sylvain59650/social-network-follow.svg" /></a>
+      <a target="_blank" title="dependencies" href="https://david-dm.org/Sylvain59650/social-network-follow"><img src="https://img.shields.io/david/Sylvain59650/social-network-follow.svg" /></a>
+      <a target="_blank" title="dependencies graph" href="http://npm.anvaka.com/#/view/2d/social-network-follow"><img src="https://img.shields.io/badge/dependencies-graph-blue.svg" /></a>
+      <img src="https://img.shields.io/bundlephobia/min/social-network-follow.svg" />
+      <img src="https://img.shields.io/badge/eslint-ok-blue.svg" />
+      <a href="https://codeclimate.com/github/Sylvain59650/social-network-follow/maintainability"><img src="https://api.codeclimate.com/v1/badges/f79aeed6bb1690a299cc/maintainability" /></a>
+      <a target="_blank" title="tests" href="https://sylvain59650.github.io/social-network-follow/"><img src="https://img.shields.io/badge/tests-passing-brightgreen.svg" /></a>
+      <a target="_blank" title="downloads" href="https://www.jsdelivr.com/package/npm/social-network-follow"><img src="https://data.jsdelivr.com/v1/package/npm/social-network-follow/badge" /></a>
+      <a target="_blank" title="cdn" href="https://cdn.jsdelivr.net/npm/social-network-follow/distrib/social-network-follow.min.js"><img src="https://img.shields.io/badge/cdn-jsdeliv-black.svg" /></a>
+      <img src="https://img.shields.io/npm/l/social-network-follow.svg" />
+      <img src="https://hits.dwyl.com/Sylvain59650/social-network-follow.svg" />
+    </div>
+
+    <nav>
+      <li><a href="#dependencies">dependencies</a></li>
+      <li><a href="#config">config</a></li>
+      <li><a href="#constructor">Share</a></li>
+      <li><a href="#update">update</a></li>
+      <li><a href="#usage">usage</a></li>
+    </nav>
+
+    <article id="dependencies">
+      <h2>dependencies</h2>
+      social-network-follow needs externals resources
+      <ul>
+        <li><a href="https://www.npmjs.com/package/htmlelement-extension" target=_blank>htmlelement-extension</a></li>
+        <li><a href="https://www.npmjs.com/package/htmlelement-events-extension" target=_blank>htmlelement-events-extension</a></li>
+        <li><a href="https://www.npmjs.com/package/object-polyfills" target=_blank>object-polyfills</a>* for IE only</li>
+      </ul>
+
+      <p>if you familiar with node.js, you can retrieve them with <b>npm install htmlelement-extension htmlelement-events-extension object-polyfills --save</b></p>
+      <p>otherwise, you can also reference them on jsdelivr</p>
+      <xmp>
+        <script src="https://cdn.jsdelivr.net/npm/htmlelement-extension@0.8.13/distrib/htmlElement.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/htmlelement-events-extension@0.9.10/distrib/htmlElement-events.min.js"></script>
+        for IE:
+        <script src="https://cdn.jsdelivr.net/npm/object-polyfills@0.8.0/distrib/object-polyfills.min.js"></script>
+      </xmp>
+
+      social-network-follow come with many styles,you must reference the one you want or create one to your taste. Predefined styles are localized in ./node_modules/social-network-follow/distrib/css
+
+      <p class="example"></p>
+      <xmp>
+        <link rel="stylesheet" type="text/css" href="modules/social-network-follow/distrib/css/social-flat.css" />
+      </xmp>
+      or on jsdelivr
+      <p class="example"></p>
+      <xmp>
+        <link rel="stylesheet" type="text/css" href="#" />
+      </xmp>
+    </article>
+
+
+    <article id="config">
+      <h2>config</h2>
+      You can configure apparence of social-network-follow in many ways:
+      <ul>
+        <li>collapse</li>
+        <li>labels/no labels</li>
+        <li>icons</li>
+        <li>place</li>
+        <li>toolips</li>
+        <li>Buttons choice</li>
+        <li>buttons order</li>
+        <li>target (new tab, new window, popup, self page)</li>
+        <li>You can add specifics buttons easily</li>
+      </ul>
+
+      <div class="arg">
+        <p><i>containerId</i>the buttons bar need a html container, you specify it by the property containerId</p>
+        <p><i>collapsable</i>Indicate if the share buttons shoulb be collapsed</p>
+        <p><i>showLabel</i>indicates whether button labels are visible or not</p>
+        <p><i>minWidthWithLabel</i>string (like 65px), indicate the min width for labels</p>
+        <p><i>shareIn</i>indicate the target of the action, Can be "popup","currentWindow","newWindow"</p>
+        <p><i>shares</i>array of strings contains the name of shares? You can use cominaisions of "twitter", "facebook", "googleplus", "linkedin", "pinterest", "email", "stumbleupon", "whatsapp", "telegram", "line", "viber", "pocket", "messenger", "browser-messenger",
+          "vkontakte", "rss", "sms", "reddit"
+        </p>
+      </div>
+
+    </article>
+
+
+    <article id="constructor">
+      <h2>Share</h2>
+      <div class="signature">
+        <p>new socials.Share(<i>config</i>);</p>
+      </div>
+      <div class="arg">
+        <p><i>config</i> jsonObject to configure share buttons</p>
+      </div>
+      <div class="description">
+        <p>create a new Share instance that display buttons to share web page</p>
+      </div>
+      <p class="example"></p>
+      <xmp>
+        <div id="socials-container"></div>
+
+        <script>
+          var config = {
+            containerId: "socials-container",
+            shares: ["twitter", "facebook", "googleplus"]
+          };
+          var socialShares = new socials.Share(config);
+        </script>
+      </xmp>
+    </article>
+
+
+    <article id="update">
+      <h2>update</h2>
+      <div>
+        If you want modify the config of social-network-follow dynamically, (example: change language of label or tooltip) you can update render in real time without reload the page.
+      </div>
+    </article>
+  </div>
+
+  <article id="usage">
+    <h2>usage</h2>
+
+    <p class="example"></p>
+    <xmp>
+
+    </xmp>
+  </article>
+</body>
+
+</html>

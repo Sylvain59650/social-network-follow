@@ -1,0 +1,25 @@
+@import "socials-colors";
+$link-text-color: #fff !default;
+$transition: background 200ms ease-in-out,
+border-color 200ms ease-in-out !default;
+@for $i from 0 to length($share-names) {
+  $shareName: nth($share-names, $i + 1);
+  $background: nth($share-colors, $i + 1);
+  .social-link.#{$shareName} {
+    background: $background;
+    &:hover {
+      background: darken($background, 10%);
+    }
+  }
+}
+
+.social-link {
+  padding: .5em .6em;
+  color: $link-text-color;
+  transition: $transition;
+  &:hover,
+  &:focus,
+  &:active {
+    color: $link-text-color;
+  }
+}

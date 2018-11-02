@@ -1,0 +1,20 @@
+@import "socials-colors";
+$color: #acacac !default;
+$hover-color: darken($color, 10%) !default;
+$border-radius: .3em !default;
+$transition: background 200ms ease-in-out,
+color 200ms ease-in-out,
+border-color 200ms ease-in-out !default;
+.social-link {
+  padding: .5em .6em;
+  border-radius: $border-radius;
+  border: 2px solid $color;
+  color: $color;
+  transition: $transition;
+  &:hover,
+  &:focus,
+  &:active {
+    border: 2px solid $hover-color;
+    color: $hover-color;
+  }
+}

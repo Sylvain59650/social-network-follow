@@ -1,0 +1,49 @@
+$base-size: 1.3em !default;
+$base-padding: .3em !default;
+$external-margin: .2em 0 !default;
+.socials {
+  margin: $external-margin;
+}
+
+.socials * {
+  box-sizing: border-box;
+}
+
+.social {
+  display: inline-block;
+  vertical-align: top;
+  margin: $base-padding 2*$base-padding $base-padding 0;
+}
+
+.social:last-child {
+  margin-right: 0;
+}
+
+.social-logo {
+  width: 1em;
+  vertical-align: middle;
+  font-size: $base-size;
+}
+
+img.social-logo {
+  width: auto;
+  height: 1em;
+}
+
+.social-link {
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  line-height: 1;
+  margin-right: 3px;
+  margin-bottom: 3px;
+}
+
+.social-label {
+  padding-left: $base-padding;
+  vertical-align: middle;
+}
+
+.social-link .collapse {
+  background-image: url(share.png)
+}

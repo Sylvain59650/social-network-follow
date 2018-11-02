@@ -1,0 +1,106 @@
+.social-link.collapsable {
+  background: #1922a0; }
+  .social-link.collapsable:hover {
+    background: #121974; }
+
+.social-link.twitter {
+  background: #00aced; }
+  .social-link.twitter:hover {
+    background: #0087ba; }
+
+.social-link.facebook {
+  background: #3b5998; }
+  .social-link.facebook:hover {
+    background: #2d4373; }
+
+.social-link.googleplus {
+  background: #dd4b39; }
+  .social-link.googleplus:hover {
+    background: #c23321; }
+
+.social-link.linkedin {
+  background: #007bb6; }
+  .social-link.linkedin:hover {
+    background: #005983; }
+
+.social-link.pinterest {
+  background: #cb2027; }
+  .social-link.pinterest:hover {
+    background: #9f191f; }
+
+.social-link.email {
+  background: #3490F3; }
+  .social-link.email:hover {
+    background: #0e76e6; }
+
+.social-link.stumbleupon {
+  background: #eb4823; }
+  .social-link.stumbleupon:hover {
+    background: #c93412; }
+
+.social-link.whatsapp {
+  background: #29a628; }
+  .social-link.whatsapp:hover {
+    background: #1f7d1e; }
+
+.social-link.telegram {
+  background: #2ca5e0; }
+  .social-link.telegram:hover {
+    background: #1c88bd; }
+
+.social-link.line {
+  background: #25af00; }
+  .social-link.line:hover {
+    background: #1a7c00; }
+
+.social-link.viber {
+  background: #7b519d; }
+  .social-link.viber:hover {
+    background: #61407b; }
+
+.social-link.pocket {
+  background: #ef4056; }
+  .social-link.pocket:hover {
+    background: #e9132e; }
+
+.social-link.messenger {
+  background: #0084ff; }
+  .social-link.messenger:hover {
+    background: #006acc; }
+
+.social-link.browser-messenger {
+  background: #0084ff; }
+  .social-link.browser-messenger:hover {
+    background: #006acc; }
+
+.social-link.vkontakte {
+  background: #45668e; }
+  .social-link.vkontakte:hover {
+    background: #344d6c; }
+
+.social-link.rss {
+  background: #ff9900; }
+  .social-link.rss:hover {
+    background: #cc7a00; }
+
+.social-link.sms {
+  background: #ffbd00; }
+  .social-link.sms:hover {
+    background: #cc9700; }
+
+.social-link.reddit {
+  background: #64a4ff; }
+  .social-link.reddit:hover {
+    background: #3186ff; }
+
+.social-link.slack {
+  background: #fff; }
+  .social-link.slack:hover {
+    background: #e6e6e6; }
+
+.social-link {
+  padding: .5em .6em;
+  color: #fff;
+  transition: background 200ms ease-in-out, border-color 200ms ease-in-out; }
+  .social-link:hover, .social-link:focus, .social-link:active {
+    color: #fff; }

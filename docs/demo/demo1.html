@@ -1,0 +1,234 @@
+<html>
+
+<head>
+  <title>my title page</title>
+  <meta name="description" content="this is my description" />
+  <script src="https://cdn.jsdelivr.net/npm/object-polyfills@0.8.0/distrib/object-polyfills.min.js"></script>
+  <script src="htmlElement.min.js"></script>
+  <script src="htmlElement-events.min.js"></script>
+
+  <script src="modules/social-network-follow/distrib/js/social-network-follow.config.min.js"></script>
+  <script src="modules/social-network-follow/distrib/js/social-network-follow.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="modules/social-network-follow/distrib/fa/css/font-awesome.min.css" />
+  <link rel="stylesheet" type="text/css" href="modules/social-network-follow/distrib/css/socials-core.css" />
+</head>
+
+<body>
+  <link rel="stylesheet" type="text/css" href="modules/social-network-follow/distrib/css/social-flat.css" />
+
+  <div class="breadcrumb">
+    <a href="https://www.npmjs.com/package/social-network-follow" title="NPM">
+      <img src="https://sylvain59650.github.io/demonstrator/img/npm.png" height="32"></a>
+    <a href="https://github.com/Sylvain59650/social-network-follow" title="GitHub"><img src="https://github.com/favicon.ico" height="32" /></a>
+    <a href="index.html" title="API"><img src="https://sylvain59650.github.io/demonstrator/img/api.png" height="32" /></a>
+  </div>
+
+
+
+  <style>
+    .container {
+      margin-left: 100px;
+      margin-right: 50px;
+    }
+    
+    .flag {
+      width: 24px;
+      cursor: pointer;
+      vertical-align: sub;
+    }
+  </style>
+  <select id="theme">
+    <option value="flat">flat</option>
+    <option value="classic">classic</option>
+    <option value="round">round</option>
+    <option value="icon">icon</option>
+    <option value="white-squares">white-squares</option>
+    <option value="anim">anim</option>
+  </select>
+
+  <select id="disposition">
+    <option value="left">left</option>
+    <option value="bottom">bottom</option>
+    <option value="right">right</option>
+    <option value="box">box</option>
+  </select>
+  <img id="en" class="flag" src="https://sylvain59650.github.io/demonstrator/assets/flags/en.png" />
+  <img id="fr" class="flag" src="https://sylvain59650.github.io/demonstrator/assets/flags/fr.png" />
+  <label for="sl"><input type="checkbox" id="sl" />Show Label</label>
+  <label for="col"><input type="checkbox" id="col" />Collapsable</label>
+  <div class="container">
+    <article>
+
+      <h1>Lorem Ipsum</h1>
+      <h4>"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."</h4>
+      <hr>
+
+      <div id="Content">
+        <div class="boxed">
+
+          <div id="lipsum">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas rhoncus viverra tortor, non bibendum lectus convallis quis. Nullam facilisis eros vel dignissim malesuada. Suspendisse potenti. Pellentesque bibendum ultrices vehicula. Cras vel diam velit.
+              In convallis purus id neque fringilla, id dignissim felis cursus. Vivamus sodales, nulla at mattis tempor, nisl metus blandit nibh, at varius tortor lorem in leo. Suspendisse potenti. Proin odio ligula, tristique vitae nunc ut, euismod suscipit
+              ante. Praesent ultrices nunc eget purus malesuada porta. In id venenatis elit.
+            </p>
+            <p>
+              Curabitur nunc velit, dignissim a commodo vitae, varius quis turpis. Ut dapibus diam vulputate ex sodales, sed condimentum orci euismod. In dictum turpis sed lorem consectetur porttitor. Nam fringilla erat odio, eu tincidunt velit porttitor maximus. Mauris
+              aliquam risus at eros feugiat, ac bibendum eros mollis. Donec risus diam, tincidunt suscipit pharetra at, elementum eu elit. Donec sapien velit, bibendum nec ultrices vitae, eleifend vel lacus. Phasellus ut ultricies quam, vel scelerisque
+              ex. Aliquam vitae nulla ut tellus tristique faucibus quis sed quam. Pellentesque ligula dui, porta id nunc ac, dignissim scelerisque enim.
+            </p>
+            <p>
+              Etiam aliquam ligula vitae nisi mollis, varius sagittis enim rutrum. Mauris porttitor, ante et consequat sagittis, metus lorem bibendum eros, non maximus lectus ante ac leo. In interdum gravida tellus ac facilisis. In ultrices erat id velit ultrices,
+              nec luctus urna iaculis. Vivamus placerat sed dui sed vulputate. Quisque finibus, elit non gravida varius, est odio venenatis sem, sagittis maximus odio est in sem. Nullam id vehicula tortor.
+            </p>
+            <p>
+              Aliquam sit amet cursus metus. In tincidunt a massa sit amet auctor. Curabitur suscipit lobortis vulputate. Curabitur a fringilla nisi, eu lacinia arcu. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vestibulum venenatis accumsan neque,
+              nec facilisis diam varius vel. Sed in enim tincidunt, tincidunt risus sit amet, luctus est. Fusce quis ipsum sit amet magna egestas molestie eget vitae velit. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus
+              mus. Ut auctor consectetur dolor, eget tempor ipsum pellentesque et. In maximus, nisi a convallis ullamcorper, sapien dolor elementum sapien, laoreet luctus velit velit at risus. Quisque porttitor, enim a dignissim maximus, enim mi interdum
+              turpis, non gravida est massa et velit.
+            </p>
+            <p>
+              Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris mattis tempus urna. Curabitur in tempus lacus. Pellentesque pharetra urna in diam auctor, quis imperdiet sapien interdum. Fusce vitae feugiat nibh. Interdum
+              et malesuada fames ac ante ipsum primis in faucibus. Etiam porta, mi eget mattis posuere, diam metus faucibus est, in pulvinar eros ante non ligula. Nulla ac neque molestie, rhoncus tellus ut, vestibulum massa. Sed maximus, risus et cursus
+              tempus, sapien tellus luctus lectus, a maximus leo risus in velit. Ut non ornare arcu. Pellentesque scelerisque, erat pharetra euismod cursus, metus enim rutrum turpis, vel semper quam est id lacus. Curabitur ipsum libero, suscipit ut volutpat
+              sit amet, sollicitudin vitae nisl.
+            </p>
+            <p>
+              Donec at sapien et lectus bibendum sagittis vitae blandit ante. Donec a ultrices neque, in ullamcorper orci. Ut augue tortor, porttitor dictum ante et, facilisis aliquam elit. Phasellus egestas efficitur augue sit amet luctus. Nunc finibus cursus sem,
+              eu gravida neque malesuada eget. Donec accumsan at tortor quis efficitur. Pellentesque molestie odio sit amet purus vestibulum, vitae ornare sem pharetra. Ut consectetur ipsum quis lorem elementum scelerisque. Mauris fringilla fermentum
+              ipsum eleifend ultricies. Suspendisse in lacus dictum, bibendum tortor vel, euismod sapien. Morbi porttitor nibh non ligula condimentum, sagittis congue lacus feugiat. Nunc in elit eu nisl euismod rhoncus. Etiam eget leo et sem sodales dictum
+              id vel risus. Integer varius pellentesque massa.
+            </p>
+            <p>
+              Fusce at ligula sagittis, facilisis neque at, pellentesque sem. Phasellus sagittis neque ac leo sollicitudin tincidunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tincidunt, sem eget cursus feugiat, dui metus dictum nisi, non tincidunt
+              lectus nisl nec ipsum. Fusce ullamcorper purus vel enim mattis, et blandit nulla viverra. Suspendisse vitae lacus ante. Fusce gravida erat dapibus neque aliquam, ac ultricies lacus euismod. Donec sit amet sem ultrices, gravida nisi imperdiet,
+              convallis elit. Cras vestibulum justo tellus, eget ultricies justo suscipit non. Praesent dictum mauris urna. Donec sed lacus mauris. In vitae commodo nunc, in cursus sem. Cras arcu quam, vehicula in sodales ultrices, cursus at est. Fusce
+              eu sem vulputate, consequat leo eu, dignissim orci.
+            </p>
+          </div>
+
+    </article>
+    </div>
+
+    <div id="socials-container"></div>
+    <script>
+      var config = {
+        containerId: "socials-container",
+        showLabel: false,
+        minWidthWithLabel: "65px",
+        follows: [{
+          name: "twitter",
+          url: "https://twitter.com/20Minutes"
+        }, {
+          name: "facebook",
+          url: "https://www.facebook.com/20minutes"
+        }, {
+          name: "googleplus",
+          url: "https://plus.google.com/+20Minutes"
+        }]
+      };
+      var socialShares = new socials.Follow(config);
+    </script>
+
+    <script>
+      qsi("theme").on("change", function(e) {
+        qsa("body>link[href*='social-']").remove();
+        var style = "modules/social-network-follow/distrib/css/social-" + qsi("theme").val() + ".css";
+        var container = qsi("socials-container");
+        document.getStyles([style]);
+        if (qsi("theme").val() === "white-squares") {
+          container.css({
+            "background-color": "black"
+          });
+        } else {
+          container.css({
+            "background-color": "unset"
+          });
+        }
+      });
+
+      qsi("disposition").on("change", function(e) {
+        var dispo = qsi("disposition").val();
+        var container = qsi("socials-container");
+        if (dispo === "bottom") {
+          container.css({
+            position: "relative",
+            "max-width": "unset",
+            float: "unset",
+            "background-color": "unset",
+            border: "unset"
+          });
+        } else if (dispo === "left") {
+          container.css({
+            position: "absolute",
+            top: "70px",
+            left: "1x",
+            right: "unset",
+            "max-width": "45px",
+            "z-index": 99,
+            "background-color": "unset",
+            border: "unset"
+          });
+        } else if (dispo === "right") {
+          container.css({
+            position: "absolute",
+            top: "70px",
+            left: "unset",
+            right: "1px",
+            "max-width": "45px",
+            "z-index": 99,
+            "background-color": "unset",
+            border: "unset"
+          });
+        } else if (dispo === "box") {
+          container.css({
+            position: "absolute",
+            top: "70px",
+            left: "unset",
+            right: "unset",
+            "max-width": "215px",
+            "z-index": 99,
+            "background-color": "white",
+            border: "solid 1px gray"
+          });
+        }
+      });
+
+      function updateLng(lng) {
+        var config = socialShares.config;
+        if (lng === "fr") {
+          socialShares.getShare("twitter").tooltip = "Suivez nous sur Twitter";
+          socialShares.getShare("facebook").tooltip = "Suivez nous sur Facebook";
+          socialShares.getShare("googleplus").tooltip = "Suivez nous sur Google+";
+          socialShares.getShare("linkedin").tooltip = "Suivez nous sur linkedin";
+        } else if (lng === "en") {
+          socialShares.getShare("twitter").tooltip = "Follow us on Twitter";
+          socialShares.getShare("facebook").tooltip = "Follow us on Facebook";
+          socialShares.getShare("googleplus").tooltip = "Follow us on Google+";
+          socialShares.getShare("linkedin").tooltip = "Follow us on linkedin";
+        }
+        socialShares.update(config);
+      };
+
+      qsi("en").on("click", function() {
+        updateLng("en");
+      });
+      qsi("fr").on("click", function() {
+        updateLng("fr");
+      });
+
+      qsi("sl").on("click", function(e) {
+        var config = socialShares.config;
+        config.showLabel = qsi("sl").checked;
+        socialShares.update(config);
+      });
+
+
+      document.ready(function() {
+        qsi("disposition").trigger("change");
+        qsi("col").trigger("click");
+      });
+    </script>
+</body>
+
+</html>
